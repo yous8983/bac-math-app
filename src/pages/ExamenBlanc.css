@@ -1,0 +1,37 @@
+.examen-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.examen-list {
+  margin-bottom: 20px;
+}
+
+.examen-detail {
+  flex: 1;
+}
+
+.examen-content {
+  background: #f4f4f4;
+  padding: 10px;
+  border-radius: 6px;
+  margin-top: 10px;
+}
+
+@media (min-width: 768px) {
+  .examen-container {
+    flex-direction: row;
+  }
+  .examen-list {
+    flex: 1;
+    margin-right: 10px;
+    margin-bottom: 0;
+  }
+  .examen-detail {
+    flex: 2;
+  }
+}

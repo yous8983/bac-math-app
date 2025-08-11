@@ -1,0 +1,37 @@
+.exercices-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.exercices-list {
+  margin-bottom: 20px;
+}
+
+.exercices-detail {
+  flex: 1;
+}
+
+.exercices-content {
+  background: #f4f4f4;
+  padding: 10px;
+  border-radius: 6px;
+  margin-top: 10px;
+}
+
+@media (min-width: 768px) {
+  .exercices-container {
+    flex-direction: row;
+  }
+  .exercices-list {
+    flex: 1;
+    margin-right: 10px;
+    margin-bottom: 0;
+  }
+  .exercices-detail {
+    flex: 2;
+  }
+}

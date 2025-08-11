@@ -1,0 +1,38 @@
+.sujets-container {
+  display: flex;
+  flex-direction: column; /* Par défaut: mobile */
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.sujets-list {
+  margin-bottom: 20px;
+}
+
+.sujets-detail {
+  flex: 1;
+}
+
+.sujets-content {
+  background: #f4f4f4;
+  padding: 10px;
+  border-radius: 6px;
+  margin-top: 10px;
+}
+
+/* Sur écrans larges : 2 colonnes */
+@media (min-width: 768px) {
+  .sujets-container {
+    flex-direction: row;
+  }
+  .sujets-list {
+    flex: 1;
+    margin-right: 10px;
+    margin-bottom: 0;
+  }
+  .sujets-detail {
+    flex: 2;
+  }
+}

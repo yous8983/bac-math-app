@@ -1,0 +1,38 @@
+.cours-container {
+  display: flex;
+  flex-direction: column; /* Par défaut: mobile */
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.cours-list {
+  margin-bottom: 20px;
+}
+
+.cours-detail {
+  flex: 1;
+}
+
+.cours-content {
+  background: #f4f4f4;
+  padding: 10px;
+  border-radius: 6px;
+  margin-top: 10px;
+}
+
+/* Sur écrans larges, passe en 2 colonnes */
+@media (min-width: 768px) {
+  .cours-container {
+    flex-direction: row;
+  }
+  .cours-list {
+    flex: 1;
+    margin-right: 10px;
+    margin-bottom: 0;
+  }
+  .cours-detail {
+    flex: 2;
+  }
+}
