@@ -1,0 +1,7 @@
+{
+  "name": "bac-math-app",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react-vite"
+}
